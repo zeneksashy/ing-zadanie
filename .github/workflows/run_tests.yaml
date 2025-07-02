@@ -4,7 +4,7 @@ on: workflow_dispatch
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     strategy:
       matrix:
         browser: [chromium, firefox, webkit]
