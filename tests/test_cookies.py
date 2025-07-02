@@ -7,6 +7,7 @@ from domains.page_obect_models.main_page import MainPage
 @pytest.fixture
 def main_page(page):
     page.goto("https://www.ing.pl/")
+    page.context.clear_cookies()
     return MainPage(page)
 
 
